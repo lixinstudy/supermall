@@ -1,3 +1,14 @@
 module.exports = {
-  transpileDependencies: true
+  // transpileDependencies: ['swiper'],
+  configureWebpack: {
+    resolve: {
+      alias: {
+        'assets': '@/assets',
+        'common': '@/common',
+        'components': '@/components',
+        'network': '@/network',
+        'views': '@/views'
+      }
+    }
+  }
 }
